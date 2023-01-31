@@ -1,17 +1,16 @@
-package VendingMachine.src;
+package VendingMachine;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
 
-        VendingMachine vendingMachine = new TextBasedVendingMachine();
+        VendingMachine vendingMachine = null;
 
         vendingMachine.displayProducts();
 
-        String selectedProduct = sc.nextLine();
-        int selectProductNumber = Integer.parseInt(selectedProduct);
+        String selectProduct = sc.nextLine();
+        int selectProductNumber = Integer.parseInt(SelectProduct);
 
         vendingMachine.selectProduct(selectProductNumber);
 
@@ -19,8 +18,7 @@ public class Main {
 
         String userEnteredCoins = sc.nextLine();
 
-
-        int[] enteredCoins = Coin.parseCoins(userEnteredCoins);
+        int[] enteredCoins = {}; //To do:
 
         vendingMachine.enterCoins(enteredCoins);
         vendingMachine.displayChangeMessage();

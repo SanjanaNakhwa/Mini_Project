@@ -1,10 +1,9 @@
-package VendingMachine.src;
 
 public interface VendingMachine {
 
      void displayProducts();
      void selectProduct(int product);
-     void displayEnterCoinsMessage();
+     void displayEnEnterCoinsMessage();
      void enterCoins(int... coins);
       void displayChangeMessage();
 }
