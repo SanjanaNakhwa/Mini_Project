@@ -7,7 +7,6 @@ public enum Product {
     SANDWICH(4,150),
     PROTEIN_BAR (5,200);
 
-
     private int id;
     private int price;
 
